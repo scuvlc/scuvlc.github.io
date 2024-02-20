@@ -2,7 +2,7 @@ ICASSP2023于2023年6月4日至10日在希腊罗得岛举行。课题组孙奕�
 
 大会正值IEEE信号处理学会（SPS）成立75周年，特别邀请了数字信号处理泰斗、IEEE Life Fellow，Alan Oppenheim教授作大会全体报告“The Origins of Digital Signal Processing”。
 
-<img src="http://139.155.85.239/static/img/article/1697706738.jpg">
+<img src="../static/img/article/1697706738.jpg">
 
 
 大会概况

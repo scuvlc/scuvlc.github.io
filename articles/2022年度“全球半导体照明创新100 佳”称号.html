@@ -12,9 +12,9 @@
     <!-- icons -->
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.1.2/css/all.min.css">
     <!-- 自定义全局css 引用的是已注册的/static路径 -->
-    <link rel="stylesheet" href="./static/css/ginkblog.css">
-    <link rel="stylesheet" media="all" href="./static/css/gfm.css">
-    <link rel="shortcut icon" href="./static/img/favicon.ico" />
+    <link rel="stylesheet" href="../static/css/ginkblog.css">
+    <link rel="stylesheet" media="all" href="../static/css/gfm.css">
+    <link rel="shortcut icon" href="../static/img/favicon.ico" />
     <title>文章详情 - VLCS@SCU</title>
 </head>
 
@@ -36,13 +36,13 @@
                             <a href="/" class="nav-link">主页Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/research" class="nav-link">研究Research</a>
+                            <a href="/indexs/research.html" class="nav-link">研究Research</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/publications" class="nav-link">学术成果Publications</a>
+                            <a href="/indexs/publications.html" class="nav-link">学术成果Publications</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/members" class="nav-link">成员Members</a>
+                            <a href="/indexs/members.html" class="nav-link">成员Members</a>
                         </li>
                         <!-- <li class="nav-item">
                         <a href="/course" class="nav-link">课程Course</a>
@@ -50,9 +50,6 @@
                     <li class="nav-item">
                         <a href="/others" class="nav-link">其他Others</a>
                     </li> -->
-                        <!-- <li class="nav-item">
-                            <a href="#" class="nav-link">吐槽版</a>
-                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -64,7 +61,7 @@
                 <article class="post pt-5">
 
                     <div id="markdown-content"></div>
-
+                    2022年度“全球半导体照明创新100 佳”称号
                 </article>
             </div>
 
@@ -74,16 +71,12 @@
                     <div class="card-header non-decoration-link">
                         <a href="https://github.com/zinkt/ginkweb">
                             <i class="fa-regular fa-star"></i>
-                            关于博客
+                            关于
                         </a>
                     </div>
                     <div class="card-body">
                         <div class="intro">
                             前端基于bootstrap5
-                            <br>
-                            后端使用gink&ginkorm
-                            <br>
-                            基于它们构建的一个类博客系统
                         </div>
                     </div>
                 </div>
@@ -98,15 +91,11 @@
                 </div>
 
             </div>
-
-
-
         </div>
-
-
     </div>
 
 </body>
 <script src="https://cdn.bootcdn.net/ajax/libs/marked/2.0.3/marked.js"></script>
-<script defer src="./static/js/toc.js"></script>
+<script>document.getElementById("markdown-content").innerHTML = marked(document.getElementById("markdown-content").innerHTML)</script>
+<script defer src="../static/js/toc.js"></script>
 </html>
