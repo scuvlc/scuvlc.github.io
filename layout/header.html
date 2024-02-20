@@ -1,0 +1,44 @@
+{{define "layout/header"}}
+
+<!-- navbar -->
+<div class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light p-4 bg-light fw-bold">
+        <div class="container">
+            <a href="/" class="navbar-brand">VLCS@IoT@SCU 可见光通信&物联网研究</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <!-- ms-auto : margin start - auto 向左推（将别的flexitem推到start处）-->
+                <ul class="navbar-nav ms-auto" style="font-size: 1.1rem;">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">主页Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/research" class="nav-link">研究Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/publications" class="nav-link">学术成果Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/members" class="nav-link">成员Members</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="/course" class="nav-link">课程Course</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/others" class="nav-link">其他Others</a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                            <a href="#" class="nav-link">吐槽版</a>
+                        </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+{{end}}
