@@ -12,16 +12,16 @@
 
   /**
    * 获取 articles 目录下的 Markdown 文件列表。
-   * 要求：articles/news.json 一定存在，内容为文件名数组。
+   * 要求：articles/news11.json 一定存在，内容为文件名数组。
    */
   async function loadArticleList() {
-    const manifestResp = await fetch(articlesDir + 'news.json', { cache: 'no-cache' });
+    const manifestResp = await fetch(articlesDir + 'news11.json', { cache: 'no-cache' });
     if (!manifestResp.ok) {
-      throw new Error('articles/news.json not found');
+      throw new Error('articles/news11.json not found');
     }
     const list = await manifestResp.json();
     if (!Array.isArray(list)) {
-      throw new Error('articles/news.json malformed');
+      throw new Error('articles/news11.json malformed');
     }
     return list.filter(Boolean);
   }
