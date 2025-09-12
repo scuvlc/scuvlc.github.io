@@ -120,7 +120,14 @@
     const articles = await Promise.all(
       files.map(async (name) => {
         try {
-          const resp = await fetch(articlesDir + encodeURIComponent(name) + `?t=${Date.now()}`);
+          // 注意：不能对路径中的斜杠进行整体 encode（encodeURIComponent），否则会把 "/" 变成 %2F，
+          // 在 GitHub Pages 这类静态托管上会导致 404。这里仅对每个路径段做编码，再用 "/" 连接。
+          const encodedPath = name
+            .split('/')
+            .filter(Boolean)
+            .map((seg) => encodeURIComponent(seg))
+            .join('/');
+          const resp = await fetch(articlesDir + encodedPath + `?t=${Date.now()}`);
           if (!resp.ok) throw new Error('not ok');
           const md = await resp.text();
           const fmTitle = parseTitleFromMarkdown(md);
