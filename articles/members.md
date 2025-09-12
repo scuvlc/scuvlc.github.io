@@ -59,7 +59,7 @@ Avatar: ../static/img/profile/null.png
 - Research Interests：Wireless Network，Visible Light Communication
 
 ### 孙伟
-Avatar: ../static/img/profile/null.png
+Avatar: ../static/img/profile/sun_w.jpg
 - 入学：2023.09——  
 - 邮箱：sunwei@stu.scu.edu.cn  
 - Research Interests：Mobile and wireless security，Deep Learning，Visible Light Positioning
