@@ -31,7 +31,7 @@ Avatar: ../static/img/profile/null.png
 - Research Interests：Mobile Computing，Optical Camera Communication，Deep Learning，Computer Vision
 
 ### 李永赟
-Avatar: ../static/img/profile/null.png
+Avatar: ../static/img/profile/li_yy.jpg
 - 入学：2024.09——  
 - 邮箱：lyyun@stu.scu.edu.cn  
 - Research Interests：Embedded Artificial Intelligence；Deep Learning
@@ -77,7 +77,7 @@ Avatar: ../static/img/profile/li_chengyu.jpg
 - Research Interests：Object Localization，Parameter Estimation
 
 ### 陈仲文
-Avatar: ../static/img/profile/chen_zw.jpg
+Avatar: ../static/img/profile/chen_zw.png
 - 入学：2024.09——  
 - 邮箱：chenzhongwen@stu.scu.edu.cn  
 - Research Interests：Sensor networks，Target positioning
