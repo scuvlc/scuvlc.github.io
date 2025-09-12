@@ -77,7 +77,7 @@ Avatar: ../static/img/profile/li_chengyu.jpg
 - Research Interests：Object Localization，Parameter Estimation
 
 ### 陈仲文
-Avatar: ../static/img/profile/chen_zw.png
+Avatar: ../static/img/profile/chen_zw.jpg
 - 入学：2024.09——  
 - 邮箱：chenzhongwen@stu.scu.edu.cn  
 - Research Interests：Sensor networks，Target positioning
