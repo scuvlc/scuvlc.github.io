@@ -86,6 +86,7 @@
                 var container = document.querySelector('section .container');
                 if (container) {
                     container.innerHTML = '<h3 class="mt-5 py-3 fw-bolder">学术成果 Publications</h3>' + marked.parse(text);
+                    container.style.fontFamily = 'Times New Roman, serif';
                 }
             })
             .catch(function (err) { console.error('Failed to load publications.md', err); });

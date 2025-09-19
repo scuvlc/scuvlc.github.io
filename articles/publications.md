@@ -6,12 +6,23 @@
 
 #### 2025
 1. Xu S, Yang M, Li C, Tang B, **Yang Y**, Chen L, **Sun Y**. Joint source localization and propagation speed estimation using TDOA with hypothesized propagation speed[J]. Digital Signal Processing, 2025.
-2. Y. Zou, Y. Xiao, W. Wu, ****Y. Sun*****, and H. Liu, "A New Iterative Weighted Least Squares Algorithm for 1-D SA Localization," IEEE Signal Processing Letters, pp. 1-5, 2025.
-3. C. Li, B. Tang, **Y. Yang**, L. Chen, and **Y. Sun***, "Algebraic Solution for Linear Array-Based 3D Localization Without Deployment Limitations," IEEE Signal Processing Letters, vol. 32, pp. 1326-1330, 2025.
-4. B. Tang, Y. Zou, **Y. Yang**, X. Yang, X. Cong, and **Y. Sun***, "Asymptotically Efficient Solutions for TOA-FOA Localization With Clock Bias and Drift," IEEE Sensors Journal, vol. 25, no. 1, pp. 1121-1132, 2025. 
-5. S. Xu, M. Yang, C. Li, B. Tang, **Y. Yang**, L. Chen, and **Y. Sun***, "Joint Source Localization and Propagation Speed Estimation Using TDOA with Hypothesized Propagation Speed," Digital Signal Processing, p. 104934, 2025. 
-6. B. Tang, **Y. Sun***, X. Heng, **Y. Yang**, and L. Chen, "Extending MPR For Locating a Moving Object Based on TDOA and FDOA," the 2025 International Conference on Acoustics, Speech and Signal Processing (ICASSP 2025), 2025. 
-7. 
+2. Zou Y, Xiao Y, Wu W, **Sun Y**, Liu H. A New Iterative Weighted Least Squares Algorithm for 1-D SA Localization[J]. IEEE Signal Processing Letters, 2025:1-5.
+3. Li C, Tang B, **Yang Y**, Chen L, **Sun Y**. Algebraic Solution for Linear Array-Based 3D Localization Without Deployment Limitations[J]. IEEE Signal Processing Letters, 2025;32:1326-30.
+4. Tang B, Zou Y, **Yang Y**, Yang X, Cong X, **Sun Y**. Asymptotically Efficient Solutions for TOA-FOA Localization With Clock Bias and Drift[J]. IEEE Sensors Journal, 2025;25(1):1121-32.
+5. Xu S, Yang M, Li C, Tang B, **Yang Y**, Chen L, **Sun Y**. Joint Source Localization and Propagation Speed Estimation Using TDOA with Hypothesized Propagation Speed[J]. Digital Signal Processing, 2025:104934.
+6. Tang B, **Sun Y**, Heng X, **Yang Y**, Chen L. Extending MPR For Locating a Moving Object Based on TDOA and FDOA[C]. In: 2025 International Conference on Acoustics, Speech and Signal Processing (ICASSP 2025); 2025.
+7. Liu Z, Zhu J, Wang J, **Sun Y**, **Yang Y**, Luo J. ReflexGest: Recognizing Hand Gestures under VLC-Capable Lamps[J]. IEEE Transactions on Mobile Computing, 2025.
+8. Liao J, Duan H, Feng K, Zhao W, **Yang Y**, Chen L, Chen Y. LR-ASD: Lightweight and Robust Network for Active Speaker Detection[J]. International Journal of Computer Vision, 2025;133:4749-69. 
+9. **Yang Y**, Liu Z, Chen Y, Yan B, **Sun Y**, Feng T. Visible light human activity recognition driven by generative language model[J]. Information Fusion, 2025.
+10. Lu B, Li Y, **Sun Y**, **Yang Y**. Leveraging Hybrid RF-VLP for High-Accuracy Indoor Localization with Sparse Anchors[J]. Sensors, 2025;25:3074.
+11. Chen S, Chen C, Zeng Z, **Yang Y**, Haas H. Full-Duplex RO-ISAC System: Wavelength Division Duplexing and Hybrid Waveform Design[J]. IEEE Photonics Technology Letters, 2025.
+12. Shao Z, Li B, Wang Z, **Yang Y**, Wang P, Luo J. FedUFD: Personalized Edge Computing Using Federated Uncertainty-Driven Feature Distillation[C]. In: IEEE INFOCOM 2025; 2025.
+13. Wu J, Zhang P, Huang Y, Liu C, **Sun Y**, Chen C, **Yang Y**, Luo J. Exploring the Potential of Utilizing Non-Line-of-Sight Channels for Networking in Visible Light Communication[J]. IEEE Internet of Things Journal, 2025;12:31723-36.
+14. Weng Y, Zheng T, **Yang Y**, Luo J. FM-Fi 2.0: Foundation Model for Cross-Modal Multi-Person Human Activity Recognition[J]. IEEE Transactions on Mobile Computing, 2025.
+15. Li Y, Wang J, Jiang Z, **Sun Y**, **Yang Y**, Wu D, Bahtiar A, Zhao D. Advances in perovskite indoor photovoltaics for intelligent Internet of Things[J]. Materials Today, 2025.
+
+
+
 
 #### 2024
 1. Zhang L, Zhao X, Mao Q, **Yang Y**, Li D, Wang H. A novel retrospective-reading model for detecting Chinese sarcasm comments of online social network[J]. IEEE Transactions on Computational Social Systems, 2024.
