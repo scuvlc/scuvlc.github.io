@@ -1,98 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
     <!-- bootstrap js -->
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
     <!-- icons -->
-    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
     <!-- 自定义全局css 引用的是已注册的/static路径 -->
     <link rel="stylesheet" href="../static/css/ginkblog.css">
+    <link rel="stylesheet" href="../static/css/modern-animations.css">
     <link rel="stylesheet" media="all" href="../static/css/gfm.css">
     <link rel="shortcut icon" href="../static/img/favicon.ico" />
-    <title>VLCS@SCU</title>
+    <title>学术成果 - VLCS@SCU</title>
+    <style>
+        .publications-section {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 2px;
+        }
+        
+        #markdown-content {
+            font-family: 'Times New Roman', serif;
+        }
+        
+        #markdown-content h3 {
+            color: var(--primary-color);
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.75rem;
+            border-bottom: 2px solid rgba(102, 126, 234, 0.2);
+            padding-bottom: 0.5rem;
+        }
+        
+        #markdown-content h4 {
+            color: var(--secondary-color);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        #markdown-content ol {
+            counter-reset: publication-counter;
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        #markdown-content ol li {
+            counter-increment: publication-counter;
+            padding-left: 3rem;
+            position: relative;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        #markdown-content ol li::before {
+            content: "[" counter(publication-counter) "]";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        
+        #markdown-content ol li:hover {
+            background: rgba(102, 126, 234, 0.03);
+            padding-right: 1rem;
+            border-radius: 0.5rem;
+        }
+        
+        #markdown-content strong {
+            color: var(--primary-color);
+        }
+        
+        #markdown-content a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        #markdown-content a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body class="text-dark">
 
-    <!-- navbar -->
+    <!-- Modern Navigation Bar -->
     <div class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-light p-4 bg-light fw-bold">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-modern p-3">
             <div class="container">
-                <a href="/" class="navbar-brand">VLCS@IoT@SCU</a>
+                <a href="/" class="navbar-brand d-flex align-items-center">
+                    <i class="fas fa-lightbulb me-2"></i>
+                    VLCS@SCU
+                </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navmenu">
-                    <!-- ms-auto : margin start - auto 向左推（将别的flexitem推到start处）-->
-                    <ul class="navbar-nav ms-auto" style="font-size: 1.1rem;">
+                    <ul class="navbar-nav ms-auto align-items-center">
                         <li class="nav-item">
-                            <a href="/" class="nav-link">主页Home</a>
+                            <a href="/" class="nav-link">
+                                <i class="fas fa-home me-1"></i>主页
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/indexs/research.html" class="nav-link">研究Research</a>
+                            <a href="/indexs/research.html" class="nav-link">
+                                <i class="fas fa-flask me-1"></i>研究
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/indexs/publicatons.html" class="nav-link">学术成果Publications</a>
+                            <a href="/indexs/publicatons.html" class="nav-link active">
+                                <i class="fas fa-book me-1"></i>成果
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/indexs/members.html" class="nav-link">成员Members</a>
+                            <a href="/indexs/members.html" class="nav-link">
+                                <i class="fas fa-users me-1"></i>团队
+                            </a>
                         </li>
-                        <!-- <li class="nav-item">
-                        <a href="/course" class="nav-link">课程Course</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/others" class="nav-link">其他Others</a>
-                    </li> -->
-                        <!-- <li class="nav-item">
-                            <a href="#" class="nav-link">吐槽版</a>
-                        </li> -->
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
 
-    <!-- publication -->
-    <section class="">
-
+    <!-- Publications Section -->
+    <section class="py-5">
         <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">
+                    <i class="fas fa-book me-2 gradient-text"></i>
+                    学术成果
+                </h2>
+                <p class="lead text-muted">Publications & Patents</p>
+            </div>
 
+            <div class="publications-section fade-in-up">
+                <div id="markdown-content" class="markdown-body"></div>
+            </div>
+        </div>
     </section>
 
-    <!-- footer -->
-    <footer class="p-5 mt-5 text-center">
+    <!-- Modern Footer -->
+    <footer class="text-center">
         <div class="container">
-            <p> Copyright &copy; <label id="cYear"></label> VLCS@SCU. All Rights Reserved.
-                <!-- <a class="text-light" href="https://beian.miit.gov.cn/">蜀ICP备2022022252号-1</a> -->
-            </p>
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-8">
+                    <div class="d-flex justify-content-center gap-4 mb-4">
+                        <a href="/" class="text-decoration-none">
+                            <i class="fas fa-home me-1"></i>主页
+                        </a>
+                        <a href="/indexs/research.html" class="text-decoration-none">
+                            <i class="fas fa-flask me-1"></i>研究
+                        </a>
+                        <a href="/indexs/publicatons.html" class="text-decoration-none">
+                            <i class="fas fa-book me-1"></i>成果
+                        </a>
+                        <a href="/indexs/members.html" class="text-decoration-none">
+                            <i class="fas fa-users me-1"></i>团队
+                        </a>
+                    </div>
+                    
+                    <div class="section-divider" style="background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);"></div>
+                    
+                    <p class="mb-2">
+                        <i class="fas fa-university me-2"></i>
+                        四川大学计算机学院 · 可见光通信与传感实验室
+                    </p>
+                    <p class="mb-4">
+                        <i class="fas fa-envelope me-2"></i>
+                        yangyanbing@scu.edu.cn
+                    </p>
+                    
+                    <p class="small mb-0">
+                        Copyright &copy; <label id="cYear"></label> VLCS@SCU. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
         </div>
-
     </footer>
 
-    <script>setTimeout("cYear.innerHTML=new Date().getFullYear()", 100); </script>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        setTimeout(() => {
+            document.getElementById('cYear').innerHTML = new Date().getFullYear();
+        }, 100);
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar-modern');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        }, { passive: true });
+    </script>
+    
+    <script src="../static/js/marked.min.js"></script>
+    <script src="../static/js/purify.min.js"></script>
     <script>
         fetch('../articles/publications.md')
             .then(function (response) { return response.text(); })
             .then(function (text) {
-                var container = document.querySelector('section .container');
-                if (container) {
-                    container.innerHTML = '<h3 class="mt-5 py-3 fw-bolder">学术成果 Publications</h3>' + marked.parse(text);
-                    container.style.fontFamily = 'Times New Roman, serif';
-                }
+                const html = marked.parse(text);
+                document.getElementById('markdown-content').innerHTML = DOMPurify.sanitize(html);
             })
-            .catch(function (err) { console.error('Failed to load publications.md', err); });
+            .catch(function (err) { 
+                console.error('Failed to load publications.md', err);
+                document.getElementById('markdown-content').innerHTML = '<p class="text-danger">内容加载失败，请刷新页面重试。</p>';
+            });
     </script>
 
 </body>
-
 
 </html>

@@ -3,6 +3,7 @@ title: 课题组孙奕髦老师在信号处理顶级会议ICASSP2023发表论文
 date: 2023-06-14
 ---
 
+
 ICASSP2023于2023年6月4日至10日在希腊罗得岛举行。课题组孙奕髦老师代表被录用论文Robust Iterative Solution For Linear Array-based 3-D Localization By Message Passing全体作者在Sensor Array & Multichannel的Poster Session上做了汇报。过程中，与国内外多所大学，包括清华大学、电子科技大学、卢森堡大学、香港城市大学、的学者们就我们的研究内容、创新点、算法设计、应用场景等多方面的内容进行了交流。
 
 大会正值IEEE信号处理学会（SPS）成立75周年，特别邀请了数字信号处理泰斗、IEEE Life Fellow，Alan Oppenheim教授作大会全体报告“The Origins of Digital Signal Processing”。

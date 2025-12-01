@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <!-- bootstrap js -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.1.2/css/all.min.css">
+    <!-- 自定义全局css 引用的是已注册的/static路径 -->
+    <link rel="stylesheet" href="./static/css/ginkblog.css">
+    <link rel="stylesheet" media="all" href="./static/css/gfm.css">
+    <link rel="shortcut icon" href="./static/img/favicon.ico" />
+
+    <title>VLCS@SCU</title>
+    <style type="text/css">
+        #genetitle,
+        #genetext {
+            font-family: COURIER, arial, sans-serif;
+        }
+
+        .categorylink a:hover {
+            text-decoration: underline;
+        }
+
+        .categorylink a {
+            font-size: 1.2rem;
+            font-weight: 600
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body class="text-dark">
+
+    <!-- navbar -->
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light p-4 bg-light fw-bold">
+            <div class="container">
+                <a href="./" class="navbar-brand">VLCS@IoT@SCU</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <!-- ms-auto : margin start - auto 向左推（将别的flexitem推到start处）-->
+                    <ul class="navbar-nav ms-auto" style="font-size: 1.1rem;">
+                        <li class="nav-item">
+                            <a href="./" class="nav-link">主页Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./indexs/research.html" class="nav-link">研究Research</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./indexs/publicatons.html" class="nav-link">学术成果Publications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./indexs/members.html" class="nav-link">成员Members</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                        <a href="/course" class="nav-link">课程Course</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/others" class="nav-link">其他Others</a>
+                    </li> -->
+                        <!-- <li class="nav-item">
+                            <a href="#" class="nav-link">吐槽版</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section class="px-5 m-3 text-center">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="col-12 col-md-10 col-sm-8 mt-5">
+                    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <!-- 为了使轮播图图片大小保持一致，方法1：style="height: 680px; object-fit: cover;" 但这样会使手机浏览时轮播图高度未适应
+                                                                方法2：裁剪图片 -->
+                                <img src="./static/img/carousel/ICASSP2023参会合影1.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <!-- <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./static/img/carousel/微信图片_20231211153605.jpg" class="d-block w-100"
+                                    alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <!-- <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./static/img/carousel/01.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <!-- <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./static/img/carousel/02.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <!-- <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p> -->
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./static/img/carousel/03.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <!-- <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p> -->
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- showcase -->
+    <!-- 类中
+        p-5：四周5
+        pt：padding-top
+        pb：padding-bottom
+        px：padding on x-axis 左和右
+        py：padding on y-axis 上和下
+        m-4：margin 4
+    -->
+    <section class="text-center">
+        <div class="container">
+            <!-- 
+                align-items-center :垂直方向对齐
+             -->
+            <div class="d-sm-flex align-items-center justify-content-around">
+                <div class="p-3">
+                    <h1 class="my-3" id="genetitle">VLCS@SCU</h1>
+                    <p class="lead text-nowrap" id="genetext">
+                        Get everything you need :)
+                    </p>
+                    <!-- <a href="https://github.com/huzidaha/home" class="text-dark small">Follow your
+                        curiosity, and you can find out how it works</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- news -->
+    <section class="py-3">
+        <div class="container">
+            <div class="p-3">
+                <h3 class="fw-bolder">新闻资讯</h3>
+            </div>
+
+            <!-- 动态生成新闻列表（从 articles/ 下的 Markdown 加载） -->
+            <div class="accordion" id="news-accordion"></div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="p-5 mt-5 text-center">
+        <div class="container">
+            <p> Copyright &copy; <label id="cYear"></label> VLCS@SCU. All Rights Reserved.
+                <!-- <a class="text-light" href="https://beian.miit.gov.cn/">蜀ICP备2022022252号-1</a> -->
+            </p>
+        </div>
+
+    </footer>
+
+    <script>setTimeout("cYear.innerHTML=new Date().getFullYear()", 100); </script>
+
+</body>
+<script src="./static/js/genetext.js"></script>
+<script src="./static/js/genetitle.js"></script>
+<!-- Markdown 渲染与安全清理 -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.9/dist/purify.min.js"></script>
+<!-- 动态新闻加载器 -->
+<script src="./static/js/news.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/marked/2.0.3/marked.js"></script>
+<script>
+    const elements = document.querySelectorAll('.markdown-content');
+
+    // 遍历每个元素，并将其文本内容转换为HTML
+    elements.forEach(element => {
+        // 使用 marked 函数将 Markdown 转换为 HTML
+        const markdownText = element.textContent;
+        const html = marked(markdownText);
+
+        // 将转换后的 HTML 设置为元素的 innerHTML
+        element.innerHTML = html;
+    });
+</script>
+
+</html>

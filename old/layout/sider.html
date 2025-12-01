@@ -1,0 +1,35 @@
+{{define "layout/sider"}}
+
+<div class="col-12 col-lg-3 pt-5">
+    <div class="card mb-3">
+        <div class="card-header non-decoration-link">
+            <a href="https://github.com/zinkt/ginkweb">
+                <i class="fa-regular fa-star"></i> 
+                关于博客
+            </a>
+        </div>
+        <div class="card-body">
+            <div class="intro">
+                前端基于bootstrap5
+                <br>
+                后端使用gink&ginkorm
+                <br>
+                基于它们构建的一个类博客系统
+            </div>
+        </div>
+    </div>
+    {{if .requireCatalog}}
+    <div class="card mb-3" id="catalogCard">
+        <div class="card-header">
+            <i class="fa-solid fa-list"></i>
+            目录
+        </div>
+        <div class="card-body" id="catalog">
+
+        </div>
+    </div>
+    {{end}}
+
+</div>
+
+{{end}}
