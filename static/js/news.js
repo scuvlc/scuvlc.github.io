@@ -12,16 +12,16 @@
 
   /**
    * 获取 articles 目录下的 Markdown 文件列表。
-   * 要求：articles/news11.json 一定存在，内容为文件名数组。
+   * 要求：articles/news-list.json 一定存在，内容为文件名数组。
    */
   async function loadArticleList() {
-    const manifestResp = await fetch(articlesDir + 'news11.json', { cache: 'no-cache' });
+    const manifestResp = await fetch(articlesDir + 'news-list.json', { cache: 'no-cache' });
     if (!manifestResp.ok) {
-      throw new Error('articles/news11.json not found');
+      throw new Error('articles/news-list.json not found');
     }
     const list = await manifestResp.json();
     if (!Array.isArray(list)) {
-      throw new Error('articles/news11.json malformed');
+      throw new Error('articles/news-list.json malformed');
     }
     return list.filter(Boolean);
   }
@@ -154,6 +154,11 @@
     // 生成手风琴
     const html = valid.map((a, idx) => createAccordionItem(idx, a.title, a.date, a.html)).join('\n');
     container.innerHTML = html;
+
+    // 渲染完成后，刷新图片模态框处理器
+    if (typeof window.refreshImageModalHandlers === 'function') {
+      setTimeout(window.refreshImageModalHandlers, 200);
+    }
   }
 
   // 等待文档与依赖加载
