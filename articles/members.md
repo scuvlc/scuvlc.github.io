@@ -53,7 +53,7 @@ Avatar: ../static/img/profile/wang_mr.jpg
 ## 硕士生 Master Students
 
 ### 吴嘉诚
-Avatar: ../static/img/profile/null.png
+Avatar: ../static/img/profile/wu_jc.jpg
 - 入学：2023.09——  
 - 邮箱：zinkt@foxmail.com  
 - Research Interests：Wireless Network，Visible Light Communication
