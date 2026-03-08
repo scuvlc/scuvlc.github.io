@@ -113,7 +113,7 @@ Avatar: ../static/img/profile/woman01.png
 - Research Interests：
 
 ### 郑国兴
-Avatar: ../static/img/profile/man02.png
+Avatar: ../static/img/profile/zheng_guoxing.jpg
 - 入学：2025.09——  
 - 邮箱：19555825537@163.com
 - Research Interests：
