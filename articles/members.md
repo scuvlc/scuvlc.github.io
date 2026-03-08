@@ -119,7 +119,7 @@ Avatar: ../static/img/profile/zheng_guoxing.jpg
 - Research Interests：
 
 ### 邹智毅
-Avatar: ../static/img/profile/man03.png
+Avatar: ../static/img/profile/zhou_zhiyi.png
 - 入学：2025.09——  
 - 邮箱：ziperr@163.com
 - Research Interests：
