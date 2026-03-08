@@ -9,7 +9,7 @@ Avatar: ../static/img/profile/yang_yb.jpg
 
 ### 孙奕髦
 Avatar: ../static/img/profile/sun_ym.png
-- 职称：特聘副研究员  
+- 职称：副研究员  
 - 邮箱：yimaosun@scu.edu.cn  
 - Research Interests：Internet of Things，Statistical Signal Processing，Target Positioning，Parameter Estimation  
 - 链接：[School Homepage](https://cs.scu.edu.cn/info/1286/16228.htm) · [Google Scholar](https://scholar.google.com/citations?user=frKbIYkAAAAJ&hl=zh-CN)
