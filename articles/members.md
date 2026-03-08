@@ -25,7 +25,7 @@ Avatar: ../static/img/profile/zhang_pp.jpg
 - Research Interests：Intelligent Sensing and Communication，Wireless Network，Optical Camera Communication
 
 ### 刘子威
-Avatar: ../static/img/profile/null.png
+Avatar: ../static/img/profile/liu_ziwei.jpg
 - 入学：2023.09——  
 - 邮箱：liuziwei0901@stu.scu.edu.cn  
 - Research Interests：Mobile Computing，Optical Camera Communication，Deep Learning，Computer Vision
