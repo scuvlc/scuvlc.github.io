@@ -101,7 +101,7 @@ Avatar: ../static/img/profile/jiang_zr.jpg
 - Research Interests：Intelligent Embedding，Deep Learning，Mobile Computing，Computer Vision
 
 ### 胡文涛
-Avatar: ../static/img/profile/man01.png
+Avatar: ../static/img/profile/hu_wentao.jpg
 - 入学：2025.09——  
 - 邮箱：huwenttao@163.com
 - Research Interests：
