@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <!-- bootstrap js -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.1.2/css/all.min.css">
+    <!-- 自定义全局css 引用的是已注册的/static路径 -->
+    <link rel="stylesheet" href="../static/css/ginkblog.css">
+    <link rel="stylesheet" media="all" href="../static/css/gfm.css">
+    <link rel="shortcut icon" href="../static/img/favicon.ico" />
+    <title>VLCS@SCU</title>
+</head>
+
+<body class="text-dark">
+
+    <!-- navbar -->
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light p-4 bg-light fw-bold">
+            <div class="container">
+                <a href="/" class="navbar-brand">VLCS@IoT@SCU</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <!-- ms-auto : margin start - auto 向左推（将别的flexitem推到start处）-->
+                    <ul class="navbar-nav ms-auto" style="font-size: 1.1rem;">
+                        <li class="nav-item">
+                            <a href="../" class="nav-link">主页Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./research.html" class="nav-link">研究Research</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./publicatons.html" class="nav-link">学术成果Publications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./members.html" class="nav-link">成员Members</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                        <a href="/course" class="nav-link">课程Course</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/others" class="nav-link">其他Others</a>
+                    </li> -->
+                        <!-- <li class="nav-item">
+                            <a href="#" class="nav-link">吐槽版</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- research -->
+    <section class="">
+
+        <div class="container">
+
+            <h3 class="mt-5 py-3 fw-bolder"></h3>
+
+            <div id="markdown-content"></div>
+
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer class="p-5 mt-5 text-center">
+        <div class="container">
+            <p> Copyright &copy; <label id="cYear"></label> VLCS@SCU. All Rights Reserved.
+                <!-- <a class="text-light" href="https://beian.miit.gov.cn/">蜀ICP备2022022252号-1</a> -->
+            </p>
+        </div>
+
+    </footer>
+
+    <script>setTimeout("cYear.innerHTML=new Date().getFullYear()", 100); </script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        fetch('../articles/research.md')
+            .then(function (response) { return response.text(); })
+            .then(function (text) {
+                document.getElementById('markdown-content').innerHTML = marked.parse(text);
+            })
+            .catch(function (err) { console.error('Failed to load research.md', err); });
+    </script>
+
+</body>
+
+
+</html>

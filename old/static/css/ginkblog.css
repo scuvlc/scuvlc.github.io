@@ -1,0 +1,51 @@
+.non-decoration-link a {
+  text-decoration: none;
+}
+
+.non-decoration-link a:hover {
+  text-decoration: underline;
+  color: #212529;
+}
+
+.non-decoration-link {
+  color: #212529;
+}
+
+body {
+  /* 占位nav fixed-top */
+  padding-top: 56px;
+}
+
+/* 锚点定位偏移 */
+html {
+  scroll-padding-top: 66px;
+}
+
+#catalog li {
+  list-style: none;
+  line-height: 33px;
+  font-size: 0.875em;
+}
+
+#catalog li:hover {
+  background-color: rgb(247, 248, 250);
+}
+
+#catalog li.current {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+#catalog a {
+  color: inherit;
+  text-decoration: none;
+}
+
+blockquote {
+    padding: .5em;
+    background-color: #f0f0f0;
+}
+
+footer {
+  font-size: small;
+}

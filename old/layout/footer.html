@@ -1,0 +1,15 @@
+{{define "layout/footer"}}
+
+<footer class="p-5 mt-5 text-center">
+    <div class="container">
+        <p> Copyright &copy; <label id="cYear"></label> VLCS@SCU. All Rights Reserved. 
+            <!-- <a class="text-light" href="https://beian.miit.gov.cn/">蜀ICP备2022022252号-1</a> -->
+        </p>
+    </div>
+
+</footer>
+
+<script>setTimeout("cYear.innerHTML=new Date().getFullYear()", 100); </script>
+
+
+{{end}}
