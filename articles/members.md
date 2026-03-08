@@ -65,7 +65,7 @@ Avatar: ../static/img/profile/sun_w.jpg
 - Research Interests：Mobile and wireless security，Deep Learning，Visible Light Positioning
 
 ### 曹鸣皋
-Avatar: ../static/img/profile/null.png
+Avatar: ../static/img/profile/cao_mingao.jpg
 - 入学：2023.09——  
 - 邮箱：1354620711@qq.com  
 - Research Interests：Mixed Reality，Visible Light Communication
