@@ -5,13 +5,13 @@
 
 :root {
   /* Color Palette - Future Tech */
-  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --primary-gradient: linear-gradient(135deg, #667eea 0%, #0f766e 100%);
   --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
   --accent-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
   --dark-gradient: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
   
   --primary-color: #667eea;
-  --secondary-color: #764ba2;
+  --secondary-color: #0f766e;
   --accent-color: #4facfe;
   --text-primary: #1a202c;
   --text-secondary: #4a5568;
@@ -348,7 +348,7 @@ a:hover {
 blockquote {
   padding: var(--spacing-md);
   margin: var(--spacing-lg) 0;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(15, 118, 110, 0.05));
   border-left: 4px solid;
   border-image: var(--primary-gradient) 1;
   border-radius: var(--radius-md);

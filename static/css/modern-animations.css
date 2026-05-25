@@ -231,7 +231,7 @@
    ======================================== */
 
 .gradient-bg-1 {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #667eea 0%, #0f766e 100%);
     background-size: 200% 200%;
     animation: gradientShift 10s ease infinite;
 }
@@ -333,7 +333,7 @@
     background: linear-gradient(
         90deg,
         #667eea 0%,
-        #764ba2 50%,
+        #0f766e 50%,
         #667eea 100%
     );
     background-size: 200% auto;
@@ -376,7 +376,7 @@
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #667eea 0%, #0f766e 100%);
     border-radius: inherit;
     z-index: -1;
 }

@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="modal fade" id="featureModal" tabindex="-1" aria-labelledby="featureModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
                 <div class="modal-content" style="border: none; border-radius: 1rem; overflow: hidden; max-height: 90vh;">
-                    <div class="modal-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; padding: 1.5rem;">
+                    <div class="modal-header" style="background: linear-gradient(135deg, #667eea 0%, #0f766e 100%); color: white; border: none; padding: 1.5rem;">
                         <div>
                             <h4 class="modal-title" id="featureModalLabel" style="font-weight: 700; margin-bottom: 0.5rem; color: white; font-size: 1.25rem;">
                                 <i id="modalIcon" class="me-2"></i>
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                     <div class="modal-footer" style="border: none; padding: 1rem 1.5rem; background: #f8f9fa;">
                         <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal" style="border-radius: 0.5rem;">关闭</button>
-                        <a href="/indexs/research.html" class="btn btn-primary btn-sm" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none; border-radius: 0.5rem;">
+                        <a href="/indexs/research.html" class="btn btn-primary btn-sm" style="background: linear-gradient(135deg, #667eea 0%, #0f766e 100%); border: none; border-radius: 0.5rem;">
                             了解更多 <i class="fas fa-arrow-right ms-1"></i>
                         </a>
                     </div>
@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 detail.applications.forEach(app => {
                     const badge = document.createElement('span');
                     badge.className = 'badge';
-                    badge.style.cssText = 'background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); color: #667eea; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 500; border: 1px solid rgba(102, 126, 234, 0.2);';
+                    badge.style.cssText = 'background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(15, 118, 110, 0.1)); color: #667eea; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 500; border: 1px solid rgba(102, 126, 234, 0.2);';
                     badge.textContent = app;
                     applicationsDiv.appendChild(badge);
                 });

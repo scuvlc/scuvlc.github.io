@@ -255,7 +255,7 @@
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #667eea 0%, #0f766e 100%);
         color: white;
         border: none;
         cursor: pointer;
@@ -321,9 +321,9 @@
     // ========================================
     // Console Easter Egg
     // ========================================
-    console.log('%c🔬 VLCS@SCU', 'font-size: 24px; font-weight: bold; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;');
+    console.log('%c🔬 VLCS@SCU', 'font-size: 24px; font-weight: bold; background: linear-gradient(135deg, #667eea 0%, #0f766e 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;');
     console.log('%cVisible Light Communication & Sensing Laboratory', 'font-size: 14px; color: #667eea;');
-    console.log('%c探索光的无限可能 · 连接智能未来', 'font-size: 12px; color: #764ba2;');
+    console.log('%c探索光的无限可能 · 连接智能未来', 'font-size: 12px; color: #0f766e;');
     console.log('%cInterested in joining us? Contact: yangyanbing@scu.edu.cn', 'font-size: 11px; color: #4a5568;');
 
 })();
