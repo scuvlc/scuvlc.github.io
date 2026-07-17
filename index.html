@@ -17,9 +17,9 @@
     <link rel="stylesheet" media="all" href="./static/css/gfm.css">
     <link rel="shortcut icon" href="./static/img/favicon.ico" />
 
-    <title>VLCS@SCU - Visible Light Communication & Sensing Lab</title>
-    <meta name="description" content="四川大学可见光通信与传感实验室 - 专注于可见光通信、智能感知与物联网技术研究">
-    <meta name="keywords" content="可见光通信,VLC,物联网,IoT,智能感知,四川大学">
+    <title>ASCEND Lab | Sichuan University</title>
+    <meta name="description" content="Advanced Sensing, Communications, Edge Networks and Data Laboratory (ASCEND Lab) at Sichuan University.">
+    <meta name="keywords" content="ASCEND Lab,Advanced Sensing,Communications,Edge Networks,Data,Sichuan University">
     
     <style type="text/css">
         /* Smooth Scrolling Fix */
@@ -65,26 +65,48 @@
             color: white;
         }
         
-        #genetitle {
+        #hero-title {
             font-family: var(--font-primary);
             font-weight: 800;
             font-size: clamp(2rem, 6vw, 3.5rem);
             color: white !important;
             text-shadow: 0 2px 8px rgba(0,0,0,0.3), 0 4px 20px rgba(0,0,0,0.2);
-            letter-spacing: -0.02em;
+            letter-spacing: 0;
             margin-bottom: 1rem;
             line-height: 1.2;
             background: none !important;
             -webkit-text-fill-color: white !important;
         }
 
-        #genetext {
-            font-family: var(--font-mono);
-            font-size: clamp(0.9rem, 2vw, 1.25rem);
+        #lab-name {
+            max-width: 900px;
+            margin-right: auto;
+            margin-left: auto;
+            font-family: var(--font-primary);
+            font-size: clamp(1rem, 2vw, 1.35rem);
             color: rgba(255,255,255,0.95);
-            font-weight: 300;
-            letter-spacing: 0.05em;
-            line-height: 1.5;
+            font-weight: 500;
+            letter-spacing: 0;
+            line-height: 1.6;
+            text-wrap: balance;
+        }
+
+        .hero-affiliation {
+            color: rgba(255,255,255,0.82);
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .ascend-initial {
+            color: #ffffff;
+            font-weight: 800;
+        }
+
+        #hero-tagline {
+            min-height: 1.8em;
+            color: rgba(255,255,255,0.92);
+            font-size: 1.1rem;
+            line-height: 1.8;
         }
         
         /* Carousel Enhancements */
@@ -346,7 +368,7 @@
         /* Stats/Features Grid */
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 2rem;
             margin: 3rem 0;
         }
@@ -504,8 +526,8 @@
         <nav class="navbar navbar-expand-lg navbar-light navbar-modern p-3">
             <div class="container">
                 <a href="/" class="navbar-brand d-flex align-items-center">
-                    <i class="fas fa-lightbulb me-2"></i>
-                    VLCS@SCU
+                    <i class="fas fa-layer-group me-2"></i>
+                    ASCEND Lab
                 </a>
 
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
@@ -545,57 +567,63 @@
         <div class="container hero-content">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <h1 class="mb-4 fade-in-up" id="genetitle">VLCS@SCU</h1>
-                    <p class="lead mb-4 fade-in-up" id="genetext" style="animation-delay: 0.2s;">
-                        Visible Light Communication & Sensing Laboratory
+                    <h1 class="mb-3 fade-in-up" id="hero-title">ASCEND Lab</h1>
+                    <p class="typing-cursor mb-4 fade-in-up" id="hero-tagline" style="animation-delay: 0.3s;">
+                        感知万物 · 通联边缘 · 数据驱动未来
                     </p>
-                    <p class="mb-4 fade-in-up" style="color: rgba(255,255,255,0.9); font-size: 1.1rem; animation-delay: 0.3s;">
-                        探索光的无限可能 · 连接智能未来
+                    <p class="hero-affiliation mb-4 fade-in-up" style="animation-delay: 0.3s;">
+                        Sichuan University
+                        <span class="ascend-initial">A</span>dvanced
+                        <span class="ascend-initial">S</span>ensing,
+                        <span class="ascend-initial">C</span>ommunications,
+                        <span class="ascend-initial">E</span>dge
+                        <span class="ascend-initial">N</span>etworks and
+                        <span class="ascend-initial">D</span>ata Laboratory
                     </p>
                     
                     <!-- Feature Highlights -->
                     <div class="features-grid mt-5 fade-in-up" style="animation-delay: 0.4s;">
-                        <div class="feature-card">
+                        <div class="feature-card" data-feature="sensing">
                             <div class="feature-icon">
-                                <i class="fas fa-wifi"></i>
+                                <i class="fas fa-eye"></i>
                             </div>
-                            <h5>可见光通信</h5>
-                            <p class="text-muted small mb-0">VLC Technology</p>
+                            <h5>先进感知</h5>
+                            <p class="text-muted small mb-0">Advanced Sensing</p>
                         </div>
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-brain"></i>
-                            </div>
-                            <h5>智能感知</h5>
-                            <p class="text-muted small mb-0">Intelligent Sensing</p>
-                        </div>
-                        <div class="feature-card">
-                            <div class="feature-icon">
-                                <i class="fas fa-network-wired"></i>
-                            </div>
-                            <h5>物联网</h5>
-                            <p class="text-muted small mb-0">Internet of Things</p>
-                        </div>
-                        <div class="feature-card">
+                        <div class="feature-card" data-feature="isac">
                             <div class="feature-icon">
                                 <i class="fas fa-satellite-dish"></i>
                             </div>
                             <h5>通感一体化</h5>
-                            <p class="text-muted small mb-0">ISAC Systems</p>
+                            <p class="text-muted small mb-0">可见光通信 · 通感融合</p>
                         </div>
-                        <div class="feature-card">
+                        <div class="feature-card" data-feature="edge-networks">
                             <div class="feature-icon">
-                                <i class="fas fa-location-crosshairs"></i>
+                                <i class="fas fa-network-wired"></i>
                             </div>
-                            <h5>目标位置感知</h5>
-                            <p class="text-muted small mb-0">Target Localization</p>
+                            <h5>边缘网络</h5>
+                            <p class="text-muted small mb-0">Edge Networks</p>
                         </div>
-                        <div class="feature-card">
+                        <div class="feature-card" data-feature="iot">
                             <div class="feature-icon">
-                                <i class="fas fa-wave-square"></i>
+                                <i class="fas fa-microchip"></i>
                             </div>
-                            <h5>智能信号处理</h5>
-                            <p class="text-muted small mb-0">Signal Processing</p>
+                            <h5>物联网</h5>
+                            <p class="text-muted small mb-0">Internet of Things</p>
+                        </div>
+                        <div class="feature-card" data-feature="embodied-ai">
+                            <div class="feature-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h5>具身智能</h5>
+                            <p class="text-muted small mb-0">Embodied AI</p>
+                        </div>
+                        <div class="feature-card" data-feature="low-altitude-networks">
+                            <div class="feature-icon">
+                                <i class="fas fa-plane"></i>
+                            </div>
+                            <h5>低空智联网</h5>
+                            <p class="text-muted small mb-0">Low-Altitude Intelligent Networks</p>
                         </div>
                     </div>
                 </div>
@@ -725,7 +753,7 @@
                     
                     <p class="mb-2">
                         <i class="fas fa-university me-2"></i>
-                        四川大学计算机学院 · 可见光通信与传感实验室
+                        四川大学计算机学院 · ASCEND Lab
                     </p>
                     <p class="mb-4">
                         <i class="fas fa-envelope me-2"></i>
@@ -733,7 +761,7 @@
                     </p>
                     
                     <p class="small mb-0">
-                        Copyright &copy; <label id="cYear"></label> VLCS@SCU. All Rights Reserved.
+                        Copyright &copy; <label id="cYear"></label> ASCEND Lab. All Rights Reserved.
                     </p>
                 </div>
             </div>
@@ -745,6 +773,24 @@
         setTimeout(() => {
             document.getElementById('cYear').innerHTML = new Date().getFullYear();
         }, 100);
+
+        // Homepage tagline typewriter effect
+        const heroTagline = document.getElementById('hero-tagline');
+        if (heroTagline) {
+            const taglineCharacters = Array.from(heroTagline.textContent.trim());
+            heroTagline.setAttribute('aria-label', taglineCharacters.join(''));
+            heroTagline.textContent = '';
+
+            let taglineIndex = 0;
+            const typeHeroTagline = () => {
+                if (taglineIndex >= taglineCharacters.length) return;
+                heroTagline.textContent += taglineCharacters[taglineIndex];
+                taglineIndex += 1;
+                window.setTimeout(typeHeroTagline, 50);
+            };
+
+            window.setTimeout(typeHeroTagline, 500);
+        }
         
         // Navbar scroll effect (optimized)
         let navbarTicking = false;
@@ -789,10 +835,6 @@
     </script>
 
 </body>
-
-<!-- Core Scripts -->
-<script src="./static/js/genetext.js"></script>
-<script src="./static/js/genetitle.js"></script>
 
 <!-- Markdown 渲染与安全清理 -->
 <script src="./static/js/marked.min.js"></script>

@@ -1,6 +1,6 @@
 /**
  * Modern Effects & Interactions
- * VLCS@SCU Website Enhancement
+ * ASCEND Lab Website Enhancement
  */
 
 (function() {
@@ -118,27 +118,6 @@
             link.classList.remove('active');
         }
     });
-
-    // ========================================
-    // Typing Effect for Hero Text
-    // ========================================
-    const typeText = document.getElementById('genetext');
-    if (typeText && typeText.textContent.trim()) {
-        const originalText = typeText.textContent;
-        typeText.textContent = '';
-        let charIndex = 0;
-        
-        function type() {
-            if (charIndex < originalText.length) {
-                typeText.textContent += originalText.charAt(charIndex);
-                charIndex++;
-                setTimeout(type, 50);
-            }
-        }
-        
-        // Start typing after a short delay
-        setTimeout(type, 500);
-    }
 
     // ========================================
     // Carousel Enhancement
@@ -321,9 +300,9 @@
     // ========================================
     // Console Easter Egg
     // ========================================
-    console.log('%c🔬 VLCS@SCU', 'font-size: 24px; font-weight: bold; background: linear-gradient(135deg, #667eea 0%, #0f766e 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;');
-    console.log('%cVisible Light Communication & Sensing Laboratory', 'font-size: 14px; color: #667eea;');
-    console.log('%c探索光的无限可能 · 连接智能未来', 'font-size: 12px; color: #0f766e;');
+    console.log('%cASCEND Lab', 'font-size: 24px; font-weight: bold; background: linear-gradient(135deg, #667eea 0%, #0f766e 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;');
+    console.log('%cAdvanced Sensing, Communications, Edge Networks and Data Laboratory', 'font-size: 14px; color: #667eea;');
+    console.log('%cSichuan University', 'font-size: 12px; color: #0f766e;');
     console.log('%cInterested in joining us? Contact: yangyanbing@scu.edu.cn', 'font-size: 11px; color: #4a5568;');
 
 })();

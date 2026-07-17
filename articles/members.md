@@ -18,12 +18,6 @@ Avatar: ../static/img/profile/sun_ym.png
 
 ## 博士生 Ph.D. Students
 
-### 张频频
-Avatar: ../static/img/profile/zhang_pp.jpg
-- 入学：2022.09——  
-- 邮箱：zhangpinpin1@stu.scu.edu.cn  
-- Research Interests：Intelligent Sensing and Communication，Wireless Network，Optical Camera Communication
-
 ### 刘子威
 Avatar: ../static/img/profile/liu_ziwei.jpg
 - 入学：2023.09——  
@@ -51,30 +45,6 @@ Avatar: ../static/img/profile/wang_mr.jpg
 ---
 
 ## 硕士生 Master Students
-
-### 吴嘉诚
-Avatar: ../static/img/profile/wu_jc.jpg
-- 入学：2023.09——  
-- 邮箱：zinkt@foxmail.com  
-- Research Interests：Wireless Network，Visible Light Communication
-
-### 孙伟
-Avatar: ../static/img/profile/sun_w.jpg
-- 入学：2023.09——  
-- 邮箱：sunwei@stu.scu.edu.cn  
-- Research Interests：Mobile and wireless security，Deep Learning，Visible Light Positioning
-
-### 曹鸣皋
-Avatar: ../static/img/profile/cao_mingao.jpg
-- 入学：2023.09——  
-- 邮箱：1354620711@qq.com  
-- Research Interests：Mixed Reality，Visible Light Communication
-
-### 李承育
-Avatar: ../static/img/profile/li_chengyu.jpg
-- 入学：2023.09——  
-- 邮箱：1455746893@qq.com  
-- Research Interests：Object Localization，Parameter Estimation
 
 ### 陈仲文
 Avatar: ../static/img/profile/chen_zw.jpg
@@ -140,6 +110,8 @@ Avatar: ../static/img/profile/woman02.png
 
 ## 毕业生 Alumni
 
+- 2023级硕士研究生：孙伟（华为），吴嘉诚（中国银行），曹鸣皋（联通），李承育（玖物机器人）
+- 2022级博士研究生：张频频（成都理工大学）
 - 2022级硕士研究生：汪晨晨（字节），鲁邦彦（阿里），唐北川（川大读博）
 - 2021级硕士研究生：胡超（阿里），徐屹淮（公务员），朱纪霏（TP-link）
 - 2020级硕士研究生：刘子威（川大读博）

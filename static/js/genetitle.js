@@ -68,7 +68,7 @@
 
 	function play() {
 	  var genetitle = document.getElementById('genetitle');
-	  var history = (0, _gen2.default)('VLCS@SCU').history;
+	  var history = (0, _gen2.default)('ASCEND Lab').history;
 	  isRunning = true;
 	  var i = 0;
 	  history.forEach(function (text, i) {
