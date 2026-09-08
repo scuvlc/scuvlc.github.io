@@ -107,10 +107,16 @@ Avatar: ../static/img/profile/woman02.png
 - Research Interests：
 
 ### 李浏阳
-Avatar: ../static/img/profile/li_ly.png
+Avatar: ../static/img/profile/li_ly.jpg
 - 入学：2026.09——  
 - 邮箱：mit.lurvelly@gmail.com
 - Research Interests：SLAM, Robotics, World Models, and Embodied AI (VLA/VLN)
+
+### 江紫檀
+Avatar: ../static/img/profile/jiang_zt.jpg
+- 入学：2026.09——  
+- 邮箱：zitann@qq.com
+- Research Interests：Embedded Artificial Intelligence；Deep Learning
 
 ---
 
