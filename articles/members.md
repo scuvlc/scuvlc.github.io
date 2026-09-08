@@ -106,6 +106,12 @@ Avatar: ../static/img/profile/woman02.png
 - 邮箱：SuChunwang_2000@163.com
 - Research Interests：
 
+### 李浏阳
+Avatar: ../static/img/profile/li_ly.png
+- 入学：2026.09——  
+- 邮箱：mit.lurvelly@gmail.com
+- Research Interests：SLAM, Robotics, World Models, and Embodied AI (VLA/VLN)
+
 ---
 
 ## 本科生 Undergraduate Students
