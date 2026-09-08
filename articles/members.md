@@ -42,6 +42,18 @@ Avatar: ../static/img/profile/wang_mr.jpg
 - 邮箱：  
 - Research Interests：
 
+### 蒋忠仁
+Avatar: ../static/img/profile/jiang_zr.jpg
+- 入学：2026.09——  
+- 邮箱：admin@mrjiang.cn  
+- Research Interests：Intelligent Embedding，Deep Learning，Mobile Computing，Computer Vision
+
+### 梁上川
+Avatar: ../static/img/profile/liang_sc.jpg
+- 入学：2026.09——  
+- 邮箱： liangshangchuan@stu.scu.edu.cn 
+- Research Interests：Edge Computing、Smart Agriculture
+
 ---
 
 ## 硕士生 Master Students
@@ -63,12 +75,6 @@ Avatar: ../static/img/profile/huang_yl.jpg
 - 入学：2024.09——  
 - 邮箱：1297859293@qq.com  
 - Research Interests：Wireless Network，Visible Light Communication
-
-### 蒋忠仁
-Avatar: ../static/img/profile/jiang_zr.jpg
-- 入学：2024.09——  
-- 邮箱：admin@mrjiang.cn  
-- Research Interests：Intelligent Embedding，Deep Learning，Mobile Computing，Computer Vision
 
 ### 胡文涛
 Avatar: ../static/img/profile/hu_wentao.jpg
