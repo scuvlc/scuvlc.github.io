@@ -118,13 +118,17 @@ Avatar: ../static/img/profile/jiang_zt.jpg
 - 邮箱：zitann@qq.com
 - Research Interests：Embedded Artificial Intelligence；Deep Learning
 
+### 杨博涵
+Avatar: ../static/img/profile/yang_bh.jpg
+- 入学：2026.09——  
+- 邮箱：KevinYuHere@foxmail.com
+- Research Interests：Signal Detection; Deep Learning
 ---
 
-## 本科生 Undergraduate Students
+<!-- ## 本科生 Undergraduate Students
 
-- 2022级：许少鸿（计科）
 
----
+--- -->
 
 ## 毕业生 Alumni
 
@@ -134,6 +138,7 @@ Avatar: ../static/img/profile/jiang_zt.jpg
 - 2021级硕士研究生：胡超（阿里），徐屹淮（公务员），朱纪霏（TP-link）
 - 2020级硕士研究生：刘子威（川大读博）
 - 2019级硕士研究生：张频频（川大读博）
+- 2022级：许少鸿
 - 2021级：陈锦骏（北京三快网络科技有限公司），黄一航（新加坡南洋理工）、罗君（华为海思）、郑浩（上交计算机）
 - 2020级本科生：莫若燊（加州大学河滨分校）、宋扬（UTA德州阿灵顿）、李天夫（香港科技大学（广州），优秀毕设2等）、左旭（KTH瑞典皇家理工学院）、冯永锴（考研川大）
 - 2019级本科生：郭美彤（复旦读研），杜凡（牧原），冉红阳（公）
