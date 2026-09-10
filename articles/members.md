@@ -123,6 +123,12 @@ Avatar: ../static/img/profile/yang_bh.jpg
 - 入学：2026.09——  
 - 邮箱：KevinYuHere@foxmail.com
 - Research Interests：Signal Detection; Deep Learning
+
+### 程玉琨
+Avatar: ../static/img/profile/cheng_yk.jpg
+- 入学：2026.09——  
+- 邮箱：c1460913825@163.com
+- Research Interests：
 ---
 
 <!-- ## 本科生 Undergraduate Students
