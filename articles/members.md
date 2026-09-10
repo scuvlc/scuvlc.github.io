@@ -129,6 +129,12 @@ Avatar: ../static/img/profile/cheng_yk.jpg
 - 入学：2026.09——  
 - 邮箱：c1460913825@163.com
 - Research Interests：
+
+### 吕梓豪
+Avatar: ../static/img/profile/lv_zh.jpg
+- 入学：2026.09——  
+- 邮箱：2026223040006@stu.scu.edu.cn
+- Research Interests：
 ---
 
 <!-- ## 本科生 Undergraduate Students
