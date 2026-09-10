@@ -135,6 +135,18 @@ Avatar: ../static/img/profile/lv_zh.jpg
 - 入学：2026.09——  
 - 邮箱：2026223040006@stu.scu.edu.cn
 - Research Interests：
+
+### 田逸夫
+Avatar: ../static/img/profile/tian_yf.jpg
+- 入学：2026.09——  
+- 邮箱：tianyf@stu.scu.edu.cn
+- Research Interests：
+
+### 陈波翰
+Avatar: ../static/img/profile/chen_bh.jpg
+- 入学：2026.09——  
+- 邮箱：cyilecbh@163.com
+- Research Interests：
 ---
 
 <!-- ## 本科生 Undergraduate Students

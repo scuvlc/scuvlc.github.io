@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: '先进感知',
             subtitle: 'Advanced Sensing',
             icon: 'fas fa-eye',
+            url: '/indexs/research/sensing.html',
             description: '面向复杂环境与智能系统，研究融合光学、视觉、无线信号和多模态信息的先进感知方法。',
             features: [
                 '多模态感知与信息融合',
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: '通感一体化',
             subtitle: 'Integrated Sensing and Communication',
             icon: 'fas fa-satellite-dish',
+            url: '/indexs/research/isac.html',
             description: '研究通信与感知功能的深度融合，重点探索可见光通信、无线光通信及面向智能场景的通感一体化技术。',
             features: [
                 '可见光通信与光无线通信',
@@ -42,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: '边缘网络',
             subtitle: 'Edge Networks',
             icon: 'fas fa-network-wired',
+            url: '/indexs/research/edge-networks.html',
             description: '研究计算、通信与感知在网络边缘的协同机制，为低时延、可信赖的智能服务提供支撑。',
             features: [
                 '边缘计算与端边云协同',
@@ -60,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: '物联网',
             subtitle: 'Internet of Things',
             icon: 'fas fa-microchip',
+            url: '/indexs/research/iot.html',
             description: '研究面向万物互联的感知、连接、计算与数据协同技术，构建高效、安全、智能的物联网系统。',
             features: [
                 '多源异构设备互联',
@@ -78,6 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: '具身智能',
             subtitle: 'Embodied AI',
             icon: 'fas fa-robot',
+            url: '/indexs/research/embodied-ai.html',
             description: '研究智能体通过感知、学习与行动同真实环境交互的方法，推动多模态感知、边缘智能与自主决策的融合。',
             features: [
                 '多模态环境感知与理解',
@@ -96,6 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: '低空智联网',
             subtitle: 'Low-Altitude Intelligent Networks',
             icon: 'fas fa-plane',
+            url: '/indexs/research/low-altitude-networks.html',
             description: '研究面向无人机和低空智能体的通信、感知、组网与边缘计算技术，支撑安全高效的低空智能应用。',
             features: [
                 '空地协同通信与组网',
@@ -151,7 +157,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                     <div class="modal-footer" style="border: none; padding: 1rem 1.5rem; background: #f8f9fa;">
                         <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal" style="border-radius: 0.5rem;">关闭</button>
-                        <a href="/indexs/research.html" class="btn btn-primary btn-sm" style="background: linear-gradient(135deg, #667eea 0%, #0f766e 100%); border: none; border-radius: 0.5rem;">
+                        <a id="featureMoreLink" href="/indexs/research.html" class="btn btn-primary btn-sm" style="background: linear-gradient(135deg, #667eea 0%, #0f766e 100%); border: none; border-radius: 0.5rem;">
                             了解更多 <i class="fas fa-arrow-right ms-1"></i>
                         </a>
                     </div>
@@ -183,6 +189,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('modalTitle').textContent = detail.title;
                 document.getElementById('modalSubtitle').textContent = detail.subtitle;
                 document.getElementById('modalDescription').textContent = detail.description;
+                document.getElementById('featureMoreLink').href = detail.url;
                 
                 // 更新特点列表
                 const featuresList = document.getElementById('modalFeatures');
