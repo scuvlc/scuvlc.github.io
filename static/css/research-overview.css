@@ -94,10 +94,10 @@ body.research-overview-page {
   -webkit-background-clip: border-box;
   background-clip: border-box;
   -webkit-text-fill-color: #fff !important;
-  font-size: clamp(3.1rem, 5vw, 5rem);
+  font-size: 4.5rem;
   font-weight: 850;
   line-height: 1.08;
-  letter-spacing: -.045em;
+  letter-spacing: 0;
 }
 
 .overview-hero h1 span {
@@ -226,10 +226,10 @@ body.research-overview-page {
 .overview-section h2 {
   margin: .9rem 0 0;
   color: var(--overview-ink);
-  font-size: clamp(2rem, 3.8vw, 3rem);
+  font-size: 2.5rem;
   font-weight: 820;
   line-height: 1.25;
-  letter-spacing: -.035em;
+  letter-spacing: 0;
 }
 
 .overview-section__head p {
@@ -338,7 +338,7 @@ body.research-overview-page {
   color: var(--overview-ink);
   font-size: 1.55rem;
   font-weight: 800;
-  letter-spacing: -.025em;
+  letter-spacing: 0;
 }
 
 .area-card__english {
@@ -558,6 +558,7 @@ body.research-overview-page {
 @media (max-width: 767.98px) {
   .overview-hero h1 { font-size: 3rem; }
   .overview-hero__lead { font-size: 1rem; }
+  .overview-section h2 { font-size: 2rem; }
   .overview-hero__visual { aspect-ratio: 1.18; }
   .overview-hero__statline { display: none; }
   .overview-visual__legend { right: 0; }
