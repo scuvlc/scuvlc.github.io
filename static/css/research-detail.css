@@ -584,6 +584,29 @@ body.research-detail-page {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* Detail-page motion is intentionally enabled independently of OS preferences. */
+.research-detail-page .hero-reveal {
+  animation-duration: 720ms !important;
+  animation-iteration-count: 1 !important;
+}
+
+.research-detail-page .research-hero__visual::after {
+  animation-duration: 2.4s !important;
+  animation-iteration-count: infinite !important;
+}
+
+.research-detail-page .rotating-phrase {
+  transition-duration: 220ms !important;
+}
+
+.research-detail-page .reveal-item {
+  transition-duration: 650ms !important;
+}
+
+.research-detail-page .application-item {
+  transition-duration: 240ms !important;
+}
+
 @media (max-width: 991.98px) {
   .research-hero {
     min-height: auto;
@@ -673,23 +696,5 @@ body.research-detail-page {
   .next-research__inner {
     align-items: flex-start;
     flex-direction: column;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .research-hero__visual::after,
-  .hero-reveal {
-    animation: none;
-  }
-
-  .hero-reveal,
-  .reveal-item {
-    opacity: 1;
-    transform: none;
-  }
-
-  .rotating-phrase,
-  .application-item {
-    transition: none;
   }
 }

@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const page = document.querySelector('.research-detail-page');
     const navbar = document.querySelector('.navbar-modern');
-    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     document.querySelectorAll('[data-current-year]').forEach(function (element) {
         element.textContent = new Date().getFullYear();
@@ -16,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', updateNavbar, { passive: true });
 
     const revealItems = document.querySelectorAll('.reveal-item');
-    if (reducedMotion || !('IntersectionObserver' in window)) {
+    if (!('IntersectionObserver' in window)) {
         revealItems.forEach(function (item) { item.classList.add('is-visible'); });
     } else {
         const revealObserver = new IntersectionObserver(function (entries) {
@@ -34,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     const rotatingPhrase = document.querySelector('.rotating-phrase');
-    if (rotatingPhrase && !reducedMotion) {
+    if (rotatingPhrase) {
         const phrases = (rotatingPhrase.dataset.words || '').split('|').filter(Boolean);
         let phraseIndex = 0;
         if (phrases.length > 1) {
@@ -71,7 +70,6 @@ document.addEventListener('DOMContentLoaded', function () {
         canvas.width = Math.round(width * ratio);
         canvas.height = Math.round(height * ratio);
         context.setTransform(ratio, 0, 0, ratio, 0, 0);
-        if (reducedMotion) drawFrame(0);
     };
 
     const rgba = function (hex, alpha) {
@@ -259,7 +257,7 @@ document.addEventListener('DOMContentLoaded', function () {
         else drawLowAltitude(time);
         context.restore();
 
-        if (!reducedMotion) animationFrame = window.requestAnimationFrame(drawFrame);
+        animationFrame = window.requestAnimationFrame(drawFrame);
     }
 
     canvas.addEventListener('pointermove', function (event) {
@@ -274,7 +272,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
-    if (!reducedMotion) animationFrame = window.requestAnimationFrame(drawFrame);
+    animationFrame = window.requestAnimationFrame(drawFrame);
 
     window.addEventListener('pagehide', function () {
         if (animationFrame) window.cancelAnimationFrame(animationFrame);

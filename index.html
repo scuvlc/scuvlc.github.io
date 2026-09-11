@@ -542,7 +542,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/indexs/research.html" class="nav-link">
+                            <a href="/indexs/research/" class="nav-link">
                                 <i class="fas fa-flask me-1"></i>研究
                             </a>
                         </li>
@@ -774,22 +774,56 @@
             document.getElementById('cYear').innerHTML = new Date().getFullYear();
         }, 100);
 
-        // Homepage tagline typewriter effect
+        // Homepage tagline typewriter effect (one tagline per non-empty line)
         const heroTagline = document.getElementById('hero-tagline');
         if (heroTagline) {
-            const taglineCharacters = Array.from(heroTagline.textContent.trim());
-            heroTagline.setAttribute('aria-label', taglineCharacters.join(''));
-            heroTagline.textContent = '';
+            const fallbackTagline = heroTagline.textContent.trim();
+            const typeInterval = 50;
+            const displayDuration = 3000;
 
-            let taglineIndex = 0;
-            const typeHeroTagline = () => {
-                if (taglineIndex >= taglineCharacters.length) return;
-                heroTagline.textContent += taglineCharacters[taglineIndex];
-                taglineIndex += 1;
-                window.setTimeout(typeHeroTagline, 50);
+            const playTaglines = (taglines) => {
+                let currentTagline = 0;
+
+                const typeNextTagline = () => {
+                    const tagline = taglines[currentTagline];
+                    const characters = Array.from(tagline);
+                    let characterIndex = 0;
+
+                    heroTagline.textContent = '';
+                    heroTagline.setAttribute('aria-label', tagline);
+
+                    const typeCharacter = () => {
+                        if (characterIndex < characters.length) {
+                            heroTagline.textContent += characters[characterIndex];
+                            characterIndex += 1;
+                            window.setTimeout(typeCharacter, typeInterval);
+                            return;
+                        }
+
+                        currentTagline = (currentTagline + 1) % taglines.length;
+                        window.setTimeout(typeNextTagline, displayDuration);
+                    };
+
+                    typeCharacter();
+                };
+
+                window.setTimeout(typeNextTagline, 500);
             };
 
-            window.setTimeout(typeHeroTagline, 500);
+            fetch('./static/data/hero-taglines.txt', { cache: 'no-cache' })
+                .then((response) => {
+                    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                    return response.text();
+                })
+                .then((text) => {
+                    const taglines = text
+                        .split(/\r?\n/)
+                        .map((line) => line.trim())
+                        .filter(Boolean);
+
+                    playTaglines(taglines.length ? taglines : [fallbackTagline]);
+                })
+                .catch(() => playTaglines([fallbackTagline]));
         }
         
         // Navbar scroll effect (optimized)
