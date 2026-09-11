@@ -25,6 +25,88 @@
             box-shadow: 0 4px 16px rgba(0,0,0,0.08);
             margin-bottom: 2rem;
         }
+
+        .results-group + .results-group {
+            margin-top: 3rem;
+            padding-top: 3rem;
+            border-top: 1px solid rgba(102, 126, 234, 0.14);
+        }
+
+        .results-group-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .results-group-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 2.8rem;
+            width: 2.8rem;
+            height: 2.8rem;
+            color: white;
+            background: linear-gradient(135deg, #667eea 0%, #0f766e 100%);
+            border-radius: 0.75rem;
+            box-shadow: 0 8px 24px rgba(102, 126, 234, 0.2);
+        }
+
+        .results-group-header h3 {
+            margin: 0;
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .results-group-header p {
+            margin: 0.2rem 0 0;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        #research-content h2 {
+            margin: 2rem 0 1rem;
+            color: var(--primary-color);
+            font-size: 1.35rem;
+            font-weight: 700;
+        }
+
+        #research-content h2:first-child {
+            margin-top: 0;
+        }
+
+        #research-content ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #research-content li {
+            position: relative;
+            margin-left: 0.4rem;
+            padding: 0 0 1rem 1.35rem;
+            color: #495057;
+            border-left: 1px solid rgba(102, 126, 234, 0.2);
+            line-height: 1.7;
+        }
+
+        #research-content li::before {
+            content: '';
+            position: absolute;
+            top: 0.55rem;
+            left: -4px;
+            width: 7px;
+            height: 7px;
+            background: #667eea;
+            border: 2px solid white;
+            border-radius: 50%;
+            box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+        }
+
+        .content-loading {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
         
         .section-title {
             position: relative;
@@ -111,6 +193,25 @@
             color: var(--secondary-color);
             text-decoration: underline;
         }
+
+        @media (max-width: 767.98px) {
+            .publications-section {
+                padding: 1.25rem;
+            }
+
+            .results-group + .results-group {
+                margin-top: 2rem;
+                padding-top: 2rem;
+            }
+
+            .results-group-header {
+                align-items: flex-start;
+            }
+
+            #markdown-content ol li {
+                padding-left: 2.5rem;
+            }
+        }
     </style>
 </head>
 
@@ -125,7 +226,8 @@
                     ASCEND Lab
                 </a>
 
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+                    aria-controls="navmenu" aria-expanded="false" aria-label="展开导航">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -163,13 +265,37 @@
             <div class="text-center mb-5">
                 <h2 class="section-title">
                     <i class="fas fa-book me-2 gradient-text"></i>
-                    学术成果
+                    科研项目与学术成果
                 </h2>
-                <p class="lead text-muted">Publications & Patents</p>
+                <p class="lead text-muted">Projects, Recognition, Publications & Patents</p>
             </div>
 
             <div class="publications-section fade-in-up">
-                <div id="markdown-content" class="markdown-body"></div>
+                <section class="results-group" id="research-projects" aria-labelledby="research-projects-title">
+                    <div class="results-group-header">
+                        <span class="results-group-icon" aria-hidden="true"><i class="fas fa-flask"></i></span>
+                        <div>
+                            <h3 id="research-projects-title">科研项目与获奖荣誉</h3>
+                            <p>Research Projects & Recognition</p>
+                        </div>
+                    </div>
+                    <div id="research-content" class="markdown-body" aria-busy="true">
+                        <p class="content-loading">正在加载科研项目……</p>
+                    </div>
+                </section>
+
+                <section class="results-group" aria-labelledby="publications-title">
+                    <div class="results-group-header">
+                        <span class="results-group-icon" aria-hidden="true"><i class="fas fa-book-open"></i></span>
+                        <div>
+                            <h3 id="publications-title">论文与专利</h3>
+                            <p>Publications & Patents</p>
+                        </div>
+                    </div>
+                    <div id="markdown-content" class="markdown-body" aria-busy="true">
+                        <p class="content-loading">正在加载论文与专利……</p>
+                    </div>
+                </section>
             </div>
         </div>
     </section>
@@ -183,7 +309,7 @@
                         <a href="/" class="text-decoration-none">
                             <i class="fas fa-home me-1"></i>主页
                         </a>
-                        <a href="/indexs/research.html" class="text-decoration-none">
+                        <a href="/indexs/research/" class="text-decoration-none">
                             <i class="fas fa-flask me-1"></i>研究
                         </a>
                         <a href="/indexs/publicatons.html" class="text-decoration-none">
@@ -232,16 +358,37 @@
     <script src="../static/js/marked.min.js"></script>
     <script src="../static/js/purify.min.js"></script>
     <script>
-        fetch('../articles/publications.md')
-            .then(function (response) { return response.text(); })
-            .then(function (text) {
-                const html = marked.parse(text);
-                document.getElementById('markdown-content').innerHTML = DOMPurify.sanitize(html);
-            })
-            .catch(function (err) { 
-                console.error('Failed to load publications.md', err);
-                document.getElementById('markdown-content').innerHTML = '<p class="text-danger">内容加载失败，请刷新页面重试。</p>';
-            });
+        async function loadMarkdown(url, targetId, options = {}) {
+            const target = document.getElementById(targetId);
+
+            try {
+                const response = await fetch(url, { cache: 'no-cache' });
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+                let text = await response.text();
+                if (options.removeComments) {
+                    text = text.replace(/<!--[\s\S]*?-->/g, '');
+                }
+                if (options.removeTitle) {
+                    text = text.replace(/^\s*#\s+研究\s+Research\s*/i, '');
+                }
+
+                target.innerHTML = DOMPurify.sanitize(marked.parse(text));
+            } catch (error) {
+                console.error(`Failed to load ${url}`, error);
+                target.innerHTML = '<p class="text-danger">内容加载失败，请刷新页面重试。</p>';
+            } finally {
+                target.removeAttribute('aria-busy');
+            }
+        }
+
+        Promise.all([
+            loadMarkdown('../articles/research.md', 'research-content', {
+                removeComments: true,
+                removeTitle: true
+            }),
+            loadMarkdown('../articles/publications.md', 'markdown-content')
+        ]);
     </script>
 
 </body>

@@ -120,44 +120,48 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 创建模态框 HTML
     const modalHTML = `
-        <div class="modal fade" id="featureModal" tabindex="-1" aria-labelledby="featureModalLabel" aria-hidden="true">
+        <div class="modal fade feature-modal" id="featureModal" tabindex="-1" aria-labelledby="featureModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-                <div class="modal-content" style="border: none; border-radius: 1rem; overflow: hidden; max-height: 90vh;">
-                    <div class="modal-header" style="background: linear-gradient(135deg, #667eea 0%, #0f766e 100%); color: white; border: none; padding: 1.5rem;">
+                <div class="modal-content feature-modal__content">
+                    <div class="feature-modal__scan" aria-hidden="true"></div>
+                    <div class="modal-header feature-modal__header">
                         <div>
-                            <h4 class="modal-title" id="featureModalLabel" style="font-weight: 700; margin-bottom: 0.5rem; color: white; font-size: 1.25rem;">
+                            <span class="feature-modal__eyebrow">ASCEND · RESEARCH DOMAIN</span>
+                            <h4 class="modal-title" id="featureModalLabel">
                                 <i id="modalIcon" class="me-2"></i>
                                 <span id="modalTitle"></span>
                             </h4>
-                            <p class="mb-0" id="modalSubtitle" style="opacity: 0.9; font-size: 0.9rem; color: white;"></p>
+                            <p class="mb-0" id="modalSubtitle"></p>
                         </div>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="关闭"></button>
                     </div>
-                    <div class="modal-body" style="padding: 1.5rem; overflow-y: auto;">
-                        <div class="mb-3">
-                            <h6 class="fw-bold mb-2" style="color: #667eea; font-size: 1rem;">
+                    <div class="modal-body feature-modal__body">
+                        <section class="feature-modal__section feature-modal__section--intro">
+                            <span class="feature-modal__section-code">01 / OVERVIEW</span>
+                            <h6>
                                 <i class="fas fa-info-circle me-2"></i>技术简介
                             </h6>
-                            <p id="modalDescription" style="line-height: 1.6; color: #555; font-size: 0.95rem;"></p>
-                        </div>
-                        
-                        <div class="mb-3">
-                            <h6 class="fw-bold mb-2" style="color: #667eea; font-size: 1rem;">
-                                <i class="fas fa-star me-2"></i>核心特点
-                            </h6>
-                            <ul id="modalFeatures" style="line-height: 1.8; color: #555; font-size: 0.9rem; padding-left: 1.2rem;"></ul>
-                        </div>
-                        
-                        <div>
-                            <h6 class="fw-bold mb-2" style="color: #667eea; font-size: 1rem;">
-                                <i class="fas fa-rocket me-2"></i>应用场景
-                            </h6>
-                            <div id="modalApplications" class="d-flex flex-wrap gap-2"></div>
+                            <p id="modalDescription"></p>
+                        </section>
+
+                        <div class="feature-modal__grid">
+                            <section class="feature-modal__section">
+                                <span class="feature-modal__section-code">02 / CAPABILITIES</span>
+                                <h6><i class="fas fa-star me-2"></i>核心特点</h6>
+                                <ul id="modalFeatures"></ul>
+                            </section>
+
+                            <section class="feature-modal__section">
+                                <span class="feature-modal__section-code">03 / SCENARIOS</span>
+                                <h6><i class="fas fa-rocket me-2"></i>应用场景</h6>
+                                <div id="modalApplications" class="feature-modal__applications"></div>
+                            </section>
                         </div>
                     </div>
-                    <div class="modal-footer" style="border: none; padding: 1rem 1.5rem; background: #f8f9fa;">
-                        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal" style="border-radius: 0.5rem;">关闭</button>
-                        <a id="featureMoreLink" href="/indexs/research.html" class="btn btn-primary btn-sm" style="background: linear-gradient(135deg, #667eea 0%, #0f766e 100%); border: none; border-radius: 0.5rem;">
+                    <div class="modal-footer feature-modal__footer">
+                        <span class="feature-modal__status" aria-hidden="true"><i></i> DATA LINK READY</span>
+                        <button type="button" class="feature-modal__button feature-modal__button--secondary" data-bs-dismiss="modal">关闭</button>
+                        <a id="featureMoreLink" href="/indexs/research/" class="feature-modal__button feature-modal__button--primary">
                             了解更多 <i class="fas fa-arrow-right ms-1"></i>
                         </a>
                     </div>
@@ -196,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 featuresList.innerHTML = '';
                 detail.features.forEach(feature => {
                     const li = document.createElement('li');
-                    li.innerHTML = `<i class="fas fa-check-circle me-2" style="color: #667eea;"></i>${feature}`;
+                    li.innerHTML = `<i class="fas fa-check-circle" aria-hidden="true"></i><span>${feature}</span>`;
                     featuresList.appendChild(li);
                 });
                 
@@ -205,8 +209,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 applicationsDiv.innerHTML = '';
                 detail.applications.forEach(app => {
                     const badge = document.createElement('span');
-                    badge.className = 'badge';
-                    badge.style.cssText = 'background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(15, 118, 110, 0.1)); color: #667eea; padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 500; border: 1px solid rgba(102, 126, 234, 0.2);';
+                    badge.className = 'feature-modal__badge';
                     badge.textContent = app;
                     applicationsDiv.appendChild(badge);
                 });

@@ -517,6 +517,7 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="./static/css/home-hero.css">
 </head>
 
 <body class="text-dark">
@@ -530,7 +531,8 @@
                     ASCEND Lab
                 </a>
 
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+                    aria-controls="navmenu" aria-expanded="false" aria-label="展开导航">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -563,72 +565,123 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="hero-section text-center">
+    <section class="hero-section text-center" aria-labelledby="hero-title">
+        <div class="hero-visual-layer" aria-hidden="true">
+            <div class="hero-orb"></div>
+            <div class="hero-scanline"></div>
+            <span class="hero-signal hero-signal-one"></span>
+            <span class="hero-signal hero-signal-two"></span>
+            <span class="hero-signal hero-signal-three"></span>
+        </div>
         <div class="container hero-content">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <h1 class="mb-3 fade-in-up" id="hero-title">ASCEND Lab</h1>
-                    <p class="typing-cursor mb-4 fade-in-up" id="hero-tagline" style="animation-delay: 0.3s;">
-                        感知万物 · 通联边缘 · 数据驱动未来
+                    <div class="hero-statusbar fade-in-up">
+                        <span class="hero-location"><i class="fas fa-crosshairs" aria-hidden="true"></i> SCU · CHENGDU</span>
+                        <span class="hero-system-status"><span class="status-dot"></span> SYSTEM ONLINE</span>
+                    </div>
+
+                    <p class="hero-kicker fade-in-up">ADVANCED RESEARCH LABORATORY · 2026</p>
+                    <h1 class="fade-in-up" id="hero-title">
+                        <span class="hero-title-main">ASCEND</span>
+                        <span class="hero-title-lab">LAB</span>
+                    </h1>
+                    <p class="hero-affiliation fade-in-up">
+                        Advanced Sensing · Communications · Edge Networks · Data Intelligence
+                        <span>Sichuan University</span>
                     </p>
-                    <p class="hero-affiliation mb-4 fade-in-up" style="animation-delay: 0.3s;">
-                        Sichuan University
-                        <span class="ascend-initial">A</span>dvanced
-                        <span class="ascend-initial">S</span>ensing,
-                        <span class="ascend-initial">C</span>ommunications,
-                        <span class="ascend-initial">E</span>dge
-                        <span class="ascend-initial">N</span>etworks and
-                        <span class="ascend-initial">D</span>ata Laboratory
-                    </p>
-                    
+
+                    <div class="hero-terminal fade-in-up">
+                        <div class="hero-terminal-header" aria-hidden="true">
+                            <span class="terminal-dots"><i></i><i></i><i></i></span>
+                            <span>ASCEND://VISION_STREAM</span>
+                            <span>LIVE</span>
+                        </div>
+                        <div class="hero-terminal-line">
+                            <span class="terminal-prompt" aria-hidden="true">&gt;</span>
+                            <p class="typing-cursor" id="hero-tagline" aria-label="感知万物 · 通联边缘 · 数据驱动未来">
+                                感知万物 · 通联边缘 · 数据驱动未来
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions fade-in-up">
+                        <a class="hero-action hero-action-primary" href="/indexs/research/">
+                            探索研究领域 <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <a class="hero-action hero-action-secondary" href="#latest-news">
+                            <i class="fas fa-signal" aria-hidden="true"></i> 查看最新动态
+                        </a>
+                    </div>
+
+                    <div class="hero-research-label fade-in-up" aria-hidden="true">
+                        <span>RESEARCH MATRIX</span>
+                        <span>06 ACTIVE DOMAINS</span>
+                    </div>
+
                     <!-- Feature Highlights -->
-                    <div class="features-grid mt-5 fade-in-up" style="animation-delay: 0.4s;">
-                        <div class="feature-card" data-feature="sensing">
+                    <div class="features-grid fade-in-up">
+                        <button type="button" class="feature-card" data-feature="sensing" aria-label="查看先进感知研究方向详情">
+                            <span class="feature-index">01</span>
                             <div class="feature-icon">
                                 <i class="fas fa-eye"></i>
                             </div>
                             <h5>先进感知</h5>
                             <p class="text-muted small mb-0">Advanced Sensing</p>
-                        </div>
-                        <div class="feature-card" data-feature="isac">
+                            <span class="feature-arrow" aria-hidden="true"><i class="fas fa-arrow-up"></i></span>
+                        </button>
+                        <button type="button" class="feature-card" data-feature="isac" aria-label="查看通感一体化研究方向详情">
+                            <span class="feature-index">02</span>
                             <div class="feature-icon">
                                 <i class="fas fa-satellite-dish"></i>
                             </div>
                             <h5>通感一体化</h5>
                             <p class="text-muted small mb-0">可见光通信 · 通感融合</p>
-                        </div>
-                        <div class="feature-card" data-feature="edge-networks">
+                            <span class="feature-arrow" aria-hidden="true"><i class="fas fa-arrow-up"></i></span>
+                        </button>
+                        <button type="button" class="feature-card" data-feature="edge-networks" aria-label="查看边缘网络研究方向详情">
+                            <span class="feature-index">03</span>
                             <div class="feature-icon">
                                 <i class="fas fa-network-wired"></i>
                             </div>
                             <h5>边缘网络</h5>
                             <p class="text-muted small mb-0">Edge Networks</p>
-                        </div>
-                        <div class="feature-card" data-feature="iot">
+                            <span class="feature-arrow" aria-hidden="true"><i class="fas fa-arrow-up"></i></span>
+                        </button>
+                        <button type="button" class="feature-card" data-feature="iot" aria-label="查看物联网研究方向详情">
+                            <span class="feature-index">04</span>
                             <div class="feature-icon">
                                 <i class="fas fa-microchip"></i>
                             </div>
                             <h5>物联网</h5>
                             <p class="text-muted small mb-0">Internet of Things</p>
-                        </div>
-                        <div class="feature-card" data-feature="embodied-ai">
+                            <span class="feature-arrow" aria-hidden="true"><i class="fas fa-arrow-up"></i></span>
+                        </button>
+                        <button type="button" class="feature-card" data-feature="embodied-ai" aria-label="查看具身智能研究方向详情">
+                            <span class="feature-index">05</span>
                             <div class="feature-icon">
                                 <i class="fas fa-robot"></i>
                             </div>
                             <h5>具身智能</h5>
                             <p class="text-muted small mb-0">Embodied AI</p>
-                        </div>
-                        <div class="feature-card" data-feature="low-altitude-networks">
+                            <span class="feature-arrow" aria-hidden="true"><i class="fas fa-arrow-up"></i></span>
+                        </button>
+                        <button type="button" class="feature-card" data-feature="low-altitude-networks" aria-label="查看低空智联网研究方向详情">
+                            <span class="feature-index">06</span>
                             <div class="feature-icon">
                                 <i class="fas fa-plane"></i>
                             </div>
                             <h5>低空智联网</h5>
                             <p class="text-muted small mb-0">Low-Altitude Intelligent Networks</p>
-                        </div>
+                            <span class="feature-arrow" aria-hidden="true"><i class="fas fa-arrow-up"></i></span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
+        <a class="hero-scroll-cue" href="#latest-news" aria-label="滚动查看最新动态">
+            <span>SCROLL</span><i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </a>
     </section>
 
     <!-- 轮播图 -->
@@ -710,7 +763,7 @@
     </section>
 
     <!-- 新闻动态 -->
-    <section class="py-5" style="padding: 0  !important;">
+    <section class="py-5" id="latest-news" style="padding: 0  !important;">
         <div class="container">
             <div class="news-section">
                 <div class="d-flex align-items-center justify-content-between mb-4">
@@ -780,8 +833,19 @@
             const fallbackTagline = heroTagline.textContent.trim();
             const typeInterval = 50;
             const displayDuration = 3000;
+            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            heroTagline.textContent = '';
+            heroTagline.setAttribute('aria-busy', 'true');
 
             const playTaglines = (taglines) => {
+                if (prefersReducedMotion) {
+                    heroTagline.textContent = taglines[0];
+                    heroTagline.setAttribute('aria-label', taglines[0]);
+                    heroTagline.removeAttribute('aria-busy');
+                    return;
+                }
+
                 let currentTagline = 0;
 
                 const typeNextTagline = () => {
@@ -790,6 +854,7 @@
                     let characterIndex = 0;
 
                     heroTagline.textContent = '';
+                    heroTagline.setAttribute('aria-busy', 'true');
                     heroTagline.setAttribute('aria-label', tagline);
 
                     const typeCharacter = () => {
@@ -800,6 +865,7 @@
                             return;
                         }
 
+                        heroTagline.removeAttribute('aria-busy');
                         currentTagline = (currentTagline + 1) % taglines.length;
                         window.setTimeout(typeNextTagline, displayDuration);
                     };
