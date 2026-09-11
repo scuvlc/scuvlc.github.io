@@ -833,19 +833,11 @@
             const fallbackTagline = heroTagline.textContent.trim();
             const typeInterval = 50;
             const displayDuration = 3000;
-            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
             heroTagline.textContent = '';
             heroTagline.setAttribute('aria-busy', 'true');
 
             const playTaglines = (taglines) => {
-                if (prefersReducedMotion) {
-                    heroTagline.textContent = taglines[0];
-                    heroTagline.setAttribute('aria-label', taglines[0]);
-                    heroTagline.removeAttribute('aria-busy');
-                    return;
-                }
-
                 let currentTagline = 0;
 
                 const typeNextTagline = () => {

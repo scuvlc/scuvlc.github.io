@@ -999,25 +999,3 @@
         display: none;
     }
 }
-
-@media (prefers-reduced-motion: reduce) {
-    .hero-section::before,
-    .hero-orb,
-    .hero-orb::before,
-    .hero-scanline,
-    .hero-signal,
-    .status-dot,
-    .hero-scroll-cue i {
-        animation: none !important;
-    }
-
-    .feature-modal__scan {
-        animation: none !important;
-    }
-
-    .hero-action,
-    .hero-section .feature-card,
-    .feature-arrow {
-        transition-duration: 0.01ms !important;
-    }
-}
