@@ -2,6 +2,9 @@
 
 #### 2026
 1. **Y. Sun**, T. Xing, Y. Zou*, **Y. Yang**, and L. Chen, "On the analysis and comparison between MPR and cartesian for TDOA localization," Signal Processing, vol. 238, p. 110148, 2026.
+2. Huang Y, Zhang P, **Sun Y**, Xu W, Chen Q, **Yang Y**, Lu L, Chen L. Resilient non-line-of-sight optical camera communication using byte-level RaptorQ and normalized variance ratio[J]. Optics Letters, 2026, 51(7): 1800. [DOI](https://doi.org/10.1364/OL.589508)
+3. Liu Z, Sun W, Feng T, **Sun Y**, Gao G, Zhang D, **Yang Y**. TransferCam: Integrated Object Recognition and Communication via Style Transfer Camera[J]. IEEE Transactions on Multimedia, 2026: 1-12. [DOI](https://doi.org/10.1109/TMM.2026.3712076)
+4. Li Y, Li S, Jiang X, Liu H, **Yang Y**. A generic framework for evaluating the effectiveness of bio-stabilization: Integrating data-driven and model-driven approaches[J]. Computers and Electronics in Agriculture, 2026, 252: 112043. [DOI](https://doi.org/10.1016/j.compag.2026.112043)
 
 
 #### 2025
@@ -74,6 +77,13 @@
 ---
 
 ### Conference
+
+#### 2026
+1. Sun W, Wang C, Jiang Z, Cao M, **Sun Y**, **Yang Y**. Bi-VLP: Practical Bidirectional Visible Light Positioning via Uplink–Downlink RSS Fusion[C]. IEEE INFOCOM 2026 - IEEE Conference on Computer Communications, 2026: 1-6. [DOI](https://doi.org/10.1109/INFOCOM59046.2026.11571224)
+2. Sun W, Xu Y, Yang YX, Zhang L, Pan T, Cui Z, **Sun Y**, **Yang Y**. CS-VLP: Lightweight Parameter Update for Cross-Scene Passive Visible Light Positioning[C]. IEEE INFOCOM 2026 - IEEE Conference on Computer Communications, 2026: 3679-3680. [DOI](https://doi.org/10.1109/INFOCOM59046.2026.11571322)
+3. Sun W, Liu Z, **Sun Y**, Chen L, Yan B, **Yang Y**. CSGAN-VLP: Swin-Transformer Enhanced Gan and Contrastive Alignment for Robust Cross-Scene Passive Visible Light Positioning[C]. ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing, 2026: 3091-3095. [DOI](https://doi.org/10.1109/ICASSP55912.2026.11461934)
+4. Jiang Z, Ma Y, **Sun Y**, **Yang Y**. A Hardware-Efficient Visible Light ISAC Prototype for Edge Intelligence[C]. 2026 14th International Conference on Intelligent Computing and Wireless Optical Communications (ICWOC), 2026: 126-130. [DOI](https://doi.org/10.1109/ICWOC70101.2026.11636526)
+5. Liu Z, Kang B, Li W, Yuan H, **Yang Y**, Li W, Zhu Y, Feng T, Luo J. Branch, or Layer? Zeroth-Order Optimization for Continual Learning of Vision-Language Models[C]. Proceedings of the AAAI Conference on Artificial Intelligence, 2026, 40(28): 24026-24034. [DOI](https://doi.org/10.1609/aaai.v40i28.39580)
 
 #### 2024
 1. Weng Y, Wu G, Zheng T, **Yang Y**, Luo J. Large model for small data: Foundation model for cross-modal RF human activity recognition[C]. Proceedings of the 22nd ACM Conference on Embedded Networked Sensor Systems, 2024.
