@@ -5,6 +5,8 @@
 2. Huang Y, Zhang P, **Sun Y**, Xu W, Chen Q, **Yang Y**, Lu L, Chen L. Resilient non-line-of-sight optical camera communication using byte-level RaptorQ and normalized variance ratio[J]. Optics Letters, 2026, 51(7): 1800. [DOI](https://doi.org/10.1364/OL.589508)
 3. Liu Z, Sun W, Feng T, **Sun Y**, Gao G, Zhang D, **Yang Y**. TransferCam: Integrated Object Recognition and Communication via Style Transfer Camera[J]. IEEE Transactions on Multimedia, 2026: 1-12. [DOI](https://doi.org/10.1109/TMM.2026.3712076)
 4. Li Y, Li S, Jiang X, Liu H, **Yang Y**. A generic framework for evaluating the effectiveness of bio-stabilization: Integrating data-driven and model-driven approaches[J]. Computers and Electronics in Agriculture, 2026, 252: 112043. [DOI](https://doi.org/10.1016/j.compag.2026.112043)
+5. Jiang Z, Li Y, Zhang P, **Sun Y**, Wang W, **Yang Y**, Zhang L. Optical cross-modal dynamic attention fusion for long-range human activity recognition[J]. Information Fusion, 2026, 139: 104893. [DOI](https://doi.org/10.1016/j.inffus.2026.104893)
+
 
 
 #### 2025
